@@ -2,7 +2,10 @@ const express = require('express')
 const app = express()
 
 app.get('/', (req, res) => {
-   return res.json({message: 'Working'})
+   return res.json([
+      {user: 'Paul'},
+      {user: 'Lary'}
+   ])
 })
 
 app.listen('5555', () => {
